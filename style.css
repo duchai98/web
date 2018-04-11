@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Lobster;
+    src: url(font/Lobster-Regular.ttf);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    padding: 100px 0 0 0;
+    background-color: rgb(207, 216, 223);
+}
+
+.login {
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    grid-row-gap: 30px;
+}
+
+.login-title {
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+}
+
+.login-input {
+    font-size: 24px;
+    padding: 10px 20px;
+    width: 460px;
+    border: none;
+    border-radius: 5%/50%;
+    background-color: #F5F8FA;
+    box-sizing: border-box;
+}
+
+.login-input[type="submit"] {
+    background-color: #1DA1F2;
+}
+
+@media screen and (max-width: 900px) {
+    .login-input {
+        border-radius: 7.5%/50%;
+        width: 320px; 
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .login, .login-input {
+        width: 100%;
+    }
+}
